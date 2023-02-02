@@ -8,3 +8,9 @@ summary(Suspension_Coil)
 describe(Suspension_Coil)
 library(psych)
 total_summary1 <- Suspension_Coil %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI))
+t.test(Suspension_Coil$PSI,mu=1500)
+lot1 <- Suspension_Coil %>% group_by(Manufacturing_Lot)
+
+
+
+                                   
